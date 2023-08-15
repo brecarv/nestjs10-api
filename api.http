@@ -12,12 +12,12 @@ POST http://localhost:3000/categories/
 Content-Type: application/json
 
 {
-    "name": "Category 1",
-    "description": "Category 1 description"
+    "name": "Category 5",
+    "description": "5"
 }
 
 ###
-PATCH http://localhost:3000/categories/3
+PATCH http://localhost:3000/categories/4
 Content-Type: application/json
 
 {
