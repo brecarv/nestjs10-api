@@ -12,7 +12,7 @@
       }
     },
     "module": {
-      "type": "commonjs",
+      "type": "commonjs"
     },
     "minify": false,
     "isModule": true

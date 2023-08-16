@@ -27,3 +27,43 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/categories/3
+
+###
+GET http://localhost:3000/videos
+
+###
+POST http://localhost:3000/videos/
+Content-Type: application/json
+
+{
+    "title": "Video 5",
+    "description": "5",
+    "category_id": 1
+}
+
+###
+POST http://localhost:3000/videos/
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary1234
+
+------WebKitFormBoundary1234
+Content-Disposition: form-data; name="title"
+
+Video 1
+------WebKitFormBoundary1234
+Content-Disposition: form-data; name="description"
+
+Description 1
+------WebKitFormBoundary1234
+Content-Disposition: form-data; name="category_id"
+
+1
+------WebKitFormBoundary1234
+Content-Disposition: form-data; name="file"; filename="video.mp4"
+Content-Type: video/mp4
+//Content-Type: markdown/text
+
+< ./video.mp4
+------WebKitFormBoundary1234--
+
+###
+GET http://localhost:3000/videos/file/video-1692188560457.mp4
